@@ -4,7 +4,7 @@ public class ColemanLiauIndex implements IScoreStrategy {
 
     @Override
     public double calculate(String text) {
-        final InputReader inputReaderObject = new readability.InputReader(text);
+        final InputReader inputReaderObject = new InputReader(text);
         final double words = inputReaderObject.getWords();
         final double sentences = inputReaderObject.getSentences();
         final double characters = inputReaderObject.getCharacters();
